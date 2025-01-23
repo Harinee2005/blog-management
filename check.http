@@ -1,0 +1,32 @@
+### Sign Up
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "email": "testuser@example.com",
+    "password": "password123",
+    "role": "user"
+}
+
+### Log In
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "testuser@example.com",
+    "password": "password123"
+}
+
+### Create Blog Post
+POST http://localhost:3000/blog
+Content-Type: application/json
+Authorization: Bearer <your_jwt_token>
+
+{
+    "title": "My First Blog Post",
+    "content": "This is the content of the blog post."
+}
+
+### Get All Blog Posts
+GET http://localhost:3000/blogs
