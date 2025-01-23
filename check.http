@@ -21,7 +21,7 @@ Content-Type: application/json
 ### Create Blog Post
 POST http://localhost:3000/blog
 Content-Type: application/json
-Authorization: Bearer <your_jwt_token>
+Authorization: Bearer <jwt_token>
 
 {
     "title": "My First Blog Post",
